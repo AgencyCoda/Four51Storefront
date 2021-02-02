@@ -26,6 +26,12 @@
                             <span class="hidden-xs">{{'Reports' | r | xlat}}</span>
                         </a>
                     </li>
+                    <li class="cancel" ng-show="user.Permissions.contains('PunchoutUser')">
+                        <a id="451qa_cancel_link" href="https://lls.coupahost.com/user/home">
+                            <i class="fa fa-times" aria-hidden="true"></i>
+                            <span class="hidden-xs">{{'Cancel Session' | r | xlat}}</span>
+                        </a>
+                    </li>
                     <li ng-class="{'active': isActive(['admin', 'addresses', 'address', 'messages', 'message', 'favoriteorders'])}">
                         <a id="451qa_acct_link" href="admin" class="hidden-md hidden-lg">
                             <i class="fa fa-cog"></i>
@@ -70,7 +76,7 @@
                                 </a>
                             </li>
                             <li class="divider" ng-show="user.Type!='TempCustomer' || AppConst.debug"></li>
-                            <li ng-show="user.Type!='TempCustomer'" class="logout">
+                            <li ng-show="user.Type!='TempCustomer' && !user.Permissions.contains('PunchoutUser')" class="logout">
                                 <a href="#"  class="451_btn_logout" ng-click="Logout()">
                                     <i class="fa fa-power-off text-danger"></i>
                                     <span>{{'Log Out' | r | xlat}}</span>
@@ -97,12 +103,12 @@
             </div>
         </section>
     </nav>
-    <nav class="dropdown-mega">
+    <!--<nav class="dropdown-mega">
         <a class="dropdown-toggle text-center" data-toggle="dropdown">
             <i class="fa fa-angle-down text-primary"></i>
         </a>
         <ul class="451qa_topnav dropdown-menu" >
             <categorytree tree='tree' current='currentCategory' />
         </ul>
-    </nav>
+    </nav>-->
 </header>

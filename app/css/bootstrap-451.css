@@ -8153,7 +8153,7 @@ select.ng-invalid:invalid:invalid:focus {
 }
 .product-image-large {
   margin: 0 auto;
-  max-height: 300px;
+  max-height: 500px;
   max-width: 100%;
 }
 .product-variants {
