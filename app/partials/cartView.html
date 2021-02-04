@@ -217,12 +217,12 @@
                             <small ng-if="currentOrder.Status == 'AwaitingApproval'">{{('Cancel' | r) + ' ' + ('Edit' | r) | xlat}}</small>
                         </button>
                     </li>
-                    <li>
+                    <!--<li>
                         <button type="submit" class="btn btn-primary" ng-click="saveChanges()">
                             <loadingindicator  ng-show="displayLoadingIndicator" />
                             <small>{{('Save' | r) + ' ' + ('Order' | r) | xlat}}</small>
                         </button>
-                    </li>
+                    </li>-->
                     <li>
                         <button class="btn" ng-class="{'btn-warning': cart.$invalid, 'btn-success': !cart.$invalid }" ng-click="submitPunchoutOrder()" ng-disabled="cart.$invalid">
                             <i ng-show="cart.$invalid" class="fa fa-warning"></i>
