@@ -37,12 +37,12 @@
         <!-- PRODUCT INFO!-->
         <div class="row">
             <div class="col-xs-12">
-                <h2 id="451qa_prod_name" ng-hide="LineItem.Variant.ExternalID">
+                <h2 id="451qa_prod_name">
                     {{LineItem.Product.Name}}
                 </h2>
-                <h2 ng-show="LineItem.Variant.ExternalID">
+                <!--<h2 ng-show="LineItem.Variant.ExternalID">
                     {{LineItem.Variant.ExternalID}}
-                </h2>
+                </h2>-->
                 <h2 class="text-success" ng-show="LineItem.PriceSchedule.PriceBreaks.length == 1" ng-if="!(user.Permissions.contains('HidePricing'))">
                     {{LineItem.PriceSchedule.PriceBreaks[0].Price | culturecurrency}}
                 </h2>
