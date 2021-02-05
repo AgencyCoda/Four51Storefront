@@ -6,7 +6,7 @@ four51.app.config(['$routeProvider', '$locationProvider', function($routeProvide
     }
 
     var concatSpecFormView = function(routeParams){
-        return 'specform.hcf?id=' + routeParams.productInteropID;
+        return 'partials/specForm.html?id=' + routeParams.productInteropID;
     }
 
     $routeProvider.
