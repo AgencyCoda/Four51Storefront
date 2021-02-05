@@ -109,7 +109,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="product-variants">
+                        <!--<div class="product-variants">
                             <ul id="451qa_list_variants">
                                 <loadingindicator ng-show="searchIndicator" />
                                 <li ng-repeat="v in LineItem.Product.Variants | paginate:(settings.currentPage-1) * settings.pageSize | limitTo:settings.pageSize">
@@ -139,7 +139,7 @@
                                     </div>
                                 </li>
                             </ul>
-                        </div>
+                        </div>-->
                         <div ng-show="LineItem.Product.VariantCount > settings.pageSize">
                             <pagination ng-change="paged()" ng-model="settings.currentPage" page="settings.currentPage" max-size="8" rotate="false" boundary-links="true" total-items="LineItem.Product.VariantCount"
                                         items-per-page="settings.pageSize" direction-links="true" previous-text="{{'Previous' | xlat}}" next-text="{{'Next' | xlat}}" first-text="{{'First' | xlat}}" last-text="{{'Last' | xlat}}"></pagination>
