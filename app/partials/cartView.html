@@ -45,7 +45,7 @@
                                     <h3 class="text-primary">
                                         <i ng-show="!item.KitIsInvalid" class="fa fa-edit"></i>
                                         <i ng-show="item.KitIsInvalid" class="fa fa-exclamation-triangle"></i>
-                                        {{item.ProductIDText}}
+                                        {{item.ProductID}}
                                     </h3>
                                     <p>
                                         {{item.Product.Name}}
@@ -54,7 +54,7 @@
                             </div>
                             <div class="col-md-6" ng-if="currentOrder.Status == 'AwaitingApproval' && !isEditforApproval">
                                 <h3 class="text-primary">
-                                    {{item.ProductIDText}}
+                                    {{item.ProductID}}
                                 </h3>
                                 <p>
                                     {{item.Product.Name}}
@@ -150,7 +150,7 @@
                                         <span ng-if="spec.ControlType != 'File'">{{spec.Value || ('(unspecified)' | xlat)}}</span>
                                     </li>
                                 </ul>
-                                <span style="padding-left: 5px;">* Be sure to check all award text information you have entered</span>
+                                <span style="padding-left: 10px;">* Be sure to check all award text information you have entered</span>
                             </div>
                         </div>
                     </div>
