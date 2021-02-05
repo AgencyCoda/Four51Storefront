@@ -6707,6 +6707,13 @@ select.ng-invalid:invalid:invalid:focus {
 .view-error-message-custom-coda {
   font-size: 16px;
 }
+.view-error-message-custom-coda ul.alert-warning li:nth-of-type(1) .badge {
+  font-size: 18px;
+}
+.view-error-message-custom-coda ul.alert-warning li:nth-of-type(1) .badge i {
+  font-size: 20px;
+}
+
 .view-error-message ul.alert-warning {
   border-top: 1px solid #fff;
   opacity: .9;
