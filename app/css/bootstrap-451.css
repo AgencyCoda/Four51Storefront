@@ -6704,15 +6704,6 @@ select.ng-invalid:invalid:invalid:focus {
 .view-response-message.ng-hide-remove.ng-hide-remove-active {
   opacity: 1;
 }
-.view-error-message-custom-coda {
-  font-size: 16px;
-}
-.view-error-message-custom-coda ul.alert-warning li:nth-of-type(1) .badge {
-  font-size: 18px;
-}
-.view-error-message-custom-coda ul.alert-warning li:nth-of-type(1) .badge i {
-  font-size: 20px;
-}
 
 .view-error-message ul.alert-warning {
   border-top: 1px solid #fff;
@@ -6787,6 +6778,17 @@ select.ng-invalid:invalid:invalid:focus {
   border-right: 10px solid transparent;
   position: absolute;
 }
+
+.view-error-message-custom-coda {
+  font-size: 16px;
+}
+.view-error-message-custom-coda ul.alert-warning li:nth-of-type(1) .badge {
+  font-size: 18px;
+}
+.view-error-message-custom-coda ul.alert-warning li:nth-of-type(1) .badge i {
+  font-size: 20px;
+}
+
 @-webkit-keyframes view-enter {
   0% {
     opacity: 0;
