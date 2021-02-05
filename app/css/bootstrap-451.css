@@ -6704,6 +6704,9 @@ select.ng-invalid:invalid:invalid:focus {
 .view-response-message.ng-hide-remove.ng-hide-remove-active {
   opacity: 1;
 }
+.view-error-message-custom-coda {
+  font-size: 16px;
+}
 .view-error-message ul.alert-warning {
   border-top: 1px solid #fff;
   opacity: .9;
